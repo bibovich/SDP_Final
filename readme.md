@@ -9,7 +9,7 @@ The project centers on the implementation of six fundamental design patterns: Si
 With a primary goal of showcasing the practical application of design patterns, this project serves as an interactive learning experience. By navigating a command-line interface, users can explore and interact with the implemented patterns, gaining insights into their real-world usage.
 
 ## UML Diagram
-(https://github.com/bibovich/SDP_Final/blob/main/UML.jpg)
+![UML Diagram](https://github.com/bibovich/SDP_Final/blob/main/UML.jpg)
 ## Patterns Implemented
 
 ### Singleton
