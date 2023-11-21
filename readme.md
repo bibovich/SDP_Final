@@ -1,6 +1,12 @@
-# Software Design Patterns Project
+# GamePatterns Showcase 🎮
 
-This project is the final exam project for the Software Design Patterns course. It implements six different design patterns: Singleton, Strategy, Factory, Observer, Decorator, and Adapter.
+The "GamePatterns Showcase" project is a culmination of the Software Design Patterns course, serving as the final exam project.
+## Project Overview
+### Focus: 
+The project centers on the implementation of six fundamental design patterns: Singleton, Strategy, Factory, Observer, Decorator, and Adapter. Each pattern is strategically applied to different facets of a gaming scenario, illustrating their utility and impact on code structure, flexibility, and maintainability.
+
+### Purpose: 
+With a primary goal of showcasing the practical application of design patterns, this project serves as an interactive learning experience. By navigating a command-line interface, users can explore and interact with the implemented patterns, gaining insights into their real-world usage.
 
 ## Patterns Implemented
 
@@ -21,6 +27,21 @@ The `ColorFilterDecorator` class is implemented as a decorator for rendering gam
 
 ### Adapter
 The `InputAdapter` class acts as an adapter for handling user input. It adapts the `InputSystem` to the `GameObject` interface.
+
+## String Hash Function
+The function initializes the hash variable to 5381, then iterates over each character in the input string, updating the hash value based on the Jenkins one-at-a-time hash algorithm. The result is a 32-bit hash code.
+```bash
+constexpr uint32_t hash(std::string_view data) noexcept {
+uint32_t hash = 5381;
+
+    for (auto&& c : data)
+        hash = ((hash << 5) + hash) + static_cast<unsigned char>(c);
+
+    return hash;
+}
+```
+
+
 
 ## Usage
 
